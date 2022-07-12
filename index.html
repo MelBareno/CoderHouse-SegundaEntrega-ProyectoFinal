@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  
+
     <title> Rinconcito Verde | Home </title>
 
     <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
@@ -12,12 +15,18 @@
     <script src="boostrap/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
+
     <link rel="icon" href="assets/img/favicon/favicon.ico">
 
-    <script src="css/wow.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
-      new WOW().init();
-	</script>
+        AOS.init();
+    </script>
+
+
+  
 </head>
 
 
@@ -26,7 +35,8 @@
         <!--inicio header-->
         <header >  
         <!--LOGO-->
-        <div class="s-header__logo"> 
+        <div class="s-header__logo" data-aos="zoom-in">
+> 
             <div class="col-12 "> 
             <a class="logo"  href="index.html">
                 <img src="assets/img/logowodsc.png" alt="Homepage" >
@@ -55,8 +65,12 @@
                 <!--Inicio main_body-->
                 <section>
                     <div   class="col-12 col-md-9" >
-                        <div class="text-justify">
-                            <p class="body-text-2">
+                        <div class="text-justify" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back"
+                        data-aos-delay="300"
+                        data-aos-offset="0">
+                  
+                            <p class="body-text-2" animation: myAnim 2s ease 0s 1 normal forwards;>
                                 La sostenibilidad puede ser definida como la práctica de mantener los procesos globales de productividad sobre los recursos de forma natural o por el hombre con recursos de igual o mayor valor sin degradar o poner en peligro los sistemas biológicos naturales.
                                 A partir de la década de 1970 los científicos empezaron a darse cuenta de que muchas de sus acciones producían un mínimo impacto sobre la naturaleza, por lo que algunos especialistas señalaron la evidente pérdida de la biodiversidad y elaboraron teorías para explicar la vulnerabilidad de los sistemas naturales.
                             </p>
@@ -78,9 +92,9 @@
                 <div class="row">
                     <div class="col-12 col-sm-12">
                         <a href="index.html"><img src="assets/img/logo_favicon.ico" alt="Homepage"></a>                                      
-                        <a href="facebook link"><img src="assets/img/social_media/fb.png" style="float:right" > </a>
-                        <a href="inta link"> <img src="assets/img/social_media/insta.png"style="float:right" ></a>
-                        <a href="linkedin link"><img src="assets/img/social_media/linkedin.png"style="float:right" ></a>
+                        <a href="facebook link"><img src="assets/img/social_media/fb.png"  > </a>
+                        <a href="inta link"> <img src="assets/img/social_media/insta.png" ></a>
+                        <a href="linkedin link"><img src="assets/img/social_media/linkedin.png" ></a>
                     </div>
                 </div>
             </div>

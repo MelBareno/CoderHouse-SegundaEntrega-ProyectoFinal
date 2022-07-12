@@ -424,7 +424,45 @@ nav{
     padding : 0;
 }
 
+/* --------------------------------------------------------------------
+ * ## Title animation
+ * -------------------------------------------------------------------- */
 
+
+@-webkit-keyframes slide-bck-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px);
+              transform: translateZ(-400px);
+    }
+  }
+  @keyframes slide-bck-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(-400px);
+              transform: translateZ(-400px);
+    }
+  }
+  @keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+  
 /* --------------------------------------------------------------------
  * ## mobile devices 
  * -------------------------------------------------------------------- */
