@@ -365,8 +365,8 @@ td {
     display: grid;
     grid-template-areas: 
     "header header"
-    "nav main_body "
-    "footer footer";
+    "nav main_body";
+   
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
     column-gap: 2%;
@@ -375,13 +375,6 @@ td {
 
 header{
     grid-area: header;
-}
-footer{
-    grid-area: footer;
-    justify-self: center;
-    display: flex;
-    justify-content: space-around;
-
 }
 
 section#main_body {
@@ -487,10 +480,9 @@ nav{
 @media screen and (min-width: 992px) {
     #grilla {
       grid-template-areas:
-        "header header header"
-        "nav main_body main_body"
-        "footer footer footer";
-    grid-template-columns: auto auto auto ;
+        "header header"
+        "nav main_body";
+    grid-template-columns: auto auto;
     }
 }
 /* ===================================================================
@@ -855,10 +847,13 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 footer {
 
-    padding-top      : calc(0.5 * var(--space));
+    padding-top      : var(--space);
     margin-top       : auto;
     font-weight      : 20;
     color            : rgba(255, 255, 255, 0.4);
-    position         : relative;
-}
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+   }
 
